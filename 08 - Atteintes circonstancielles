@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QPACRE 05 — Atteintes circonstancielles</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f3f3f3;
+            color: #222;
+        }
+
+        header {
+            background: #c90000;
+            color: white;
+            text-align: center;
+            padding: 28px 15px 25px;
+        }
+
+        .icone-header {
+            font-size: 42px;
+            margin-bottom: 8px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 25px;
+            letter-spacing: 0.5px;
+        }
+
+        header p {
+            margin: 7px 0 0;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .conteneur {
+            max-width: 650px;
+            margin: 25px auto;
+            padding: 0 15px;
+        }
+
+        .fiche {
+            display: flex;
+            align-items: center;
+            min-height: 90px;
+
+            background: white;
+            color: #222;
+            text-decoration: none;
+
+            border-radius: 14px;
+            box-shadow: 0 3px 9px rgba(0, 0, 0, 0.14);
+
+            padding: 14px 18px;
+            margin-bottom: 16px;
+        }
+
+        .icone-fiche {
+            width: 58px;
+            height: 58px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #eeeeee;
+            border-radius: 12px;
+
+            font-size: 28px;
+            flex-shrink: 0;
+        }
+
+        .texte-fiche {
+            flex: 1;
+            padding: 0 15px;
+            text-align: left;
+        }
+
+        .numero {
+            display: block;
+            color: #c90000;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        .titre-fiche {
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1.25;
+        }
+
+        .fleche {
+            font-size: 32px;
+            color: #c90000;
+        }
+
+        .retour {
+            display: block;
+            background: #222;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            padding: 14px;
+            margin-top: 28px;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            color: #777;
+            font-size: 12px;
+            line-height: 1.6;
+            padding: 15px 10px 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="icone-header">⚠️</div>
+
+    <h1>ATTEINTES CIRCONSTANCIELLES</h1>
+
+    <p>THÈME 08 — QPACRE 05</p>
+
+</header>
+
+
+<main class="conteneur">
+
+
+    <a class="fiche" href="08AC01.html">
+        <div class="icone-fiche">⚡</div>
+        <div class="texte-fiche">
+            <span class="numero">08AC01</span>
+            <span class="titre-fiche">ACCIDENT ÉLECTRIQUE</span>
+        </div>
+        <div class="fleche">›</div>
+    </a>
+
+
+    <a class="fiche" href="08AC02.html">
+        <div class="icone-fiche">🌊</div>
+        <div class="texte-fiche">
+            <span class="numero">08AC02</span>
+            <span class="titre-fiche">NOYADE</span>
+        </div>
+        <div class="fleche">›</div>
+    </a>
+
+
+    <a class="fiche" href="08AC03.html">
+        <div class="icone-fiche">🤿</div>
+        <div class="texte-fiche">
+            <span class="numero">08AC03</span>
+            <span class="titre-fiche">ACCIDENTS LIÉS À LA PLONGÉE</span>
+        </div>
+        <div class="fleche">›</div>
+    </a>
+
+
+    <a class="fiche" href="08AC04.html">
+        <div class="icone-fiche">👶</div>
+        <div class="texte-fiche">
+            <span class="numero">08AC04</span>
+            <span class="titre-fiche">ACCOUCHEMENT INOPINÉ</span>
+        </div>
+        <div class="fleche">›</div>
+    </a>
+
+
+    <a class="fiche" href="08AC05.html">
+        <div class="icone-fiche">☀️</div>
+        <div class="texte-fiche">
+            <span class="numero">08AC05</span>
+            <span class="titre-fiche">AFFECTIONS LIÉES À LA CHALEUR</span>
+        </div>
+        <div class="fleche">›</div>
+    </a>
+
+
+    <a class="fiche" href="08AC06.html">
+        <div class="icone-fiche">🥶</div>
+        <div class="texte-fiche">
+            <span class="numero">08AC06</span>
+            <span class="titre-fiche">HYPOTHERMIE</span>
+        </div>
+        <div class="fleche">›</div>
+    </a>
+
+
+    <a class="fiche" href="08AC07.html">
+        <div class="icone-fiche">❄️</div>
+        <div class="texte-fiche">
+            <span class="numero">08AC07</span>
+            <span class="titre-fiche">GELURES</span>
+        </div>
+        <div class="fleche">›</div>
+    </a>
+
+
+    <a class="fiche" href="08AC08.html">
+        <div class="icone-fiche">☠️</div>
+        <div class="texte-fiche">
+            <span class="numero">08AC08</span>
+            <span class="titre-fiche">INTOXICATIONS</span>
+        </div>
+        <div class="fleche">›</div>
+    </a>
+
+
+    <a class="fiche" href="08AC09.html">
+        <div class="icone-fiche">🐝</div>
+        <div class="texte-fiche">
+            <span class="numero">08AC09</span>
+            <span class="titre-fiche">PIQÛRES &amp; MORSURES</span>
+        </div>
+        <div class="fleche">›</div>
+    </a>
+
+
+    <a class="fiche" href="08AC10.html">
+        <div class="icone-fiche">🧗</div>
+        <div class="texte-fiche">
+            <span class="numero">08AC10</span>
+            <span class="titre-fiche">SYNDROME DE SUSPENSION</span>
+        </div>
+        <div class="fleche">›</div>
+    </a>
+
+
+    <a class="fiche" href="08AC11.html">
+        <div class="icone-fiche">🪢</div>
+        <div class="texte-fiche">
+            <span class="numero">08AC11</span>
+            <span class="titre-fiche">PENDAISON / STRANGULATION</span>
+        </div>
+        <div class="fleche">›</div>
+    </a>
+
+
+    <a class="fiche" href="08AC12.html">
+        <div class="icone-fiche">💥</div>
+        <div class="texte-fiche">
+            <span class="numero">08AC12</span>
+            <span class="titre-fiche">VICTIMES D’EXPLOSION</span>
+        </div>
+        <div class="fleche">›</div>
+    </a>
+
+
+    <a class="fiche" href="08AC13.html">
+        <div class="icone-fiche">🏗️</div>
+        <div class="texte-fiche">
+            <span class="numero">08AC13</span>
+            <span class="titre-fiche">COMPRESSION DE MEMBRE</span>
+        </div>
+        <div class="fleche">›</div>
+    </a>
+
+
+    <a class="fiche" href="08AC14.html">
+        <div class="icone-fiche">🏔️</div>
+        <div class="texte-fiche">
+            <span class="numero">08AC14</span>
+            <span class="titre-fiche">VICTIME D’AVALANCHE</span>
+        </div>
+        <div class="fleche">›</div>
+    </a>
+
+
+    <a class="fiche" href="08AC15.html">
+        <div class="icone-fiche">⚡</div>
+        <div class="texte-fiche">
+            <span class="numero">08AC15</span>
+            <span class="titre-fiche">ACCIDENT LIÉ À LA FOUDRE</span>
+        </div>
+        <div class="fleche">›</div>
+    </a>
+
+
+    <a class="retour" href="../index.html">
+        ← RETOUR AUX THÈMES
+    </a>
+
+</main>
+
+
+<footer>
+    QPACRE — Secourisme<br>
+    FICHE RÉFLEXE RTN PSE 2026
+</footer>
+
+</body>
+</html>
