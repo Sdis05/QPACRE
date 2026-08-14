@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QPACRE 05 — Secourisme</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            color: #222;
+        }
+
+        /* EN-TÊTE */
+
+        header {
+            background: #c90000;
+            color: white;
+            text-align: center;
+            padding: 28px 15px 25px;
+        }
+
+        .logo {
+            font-size: 42px;
+            margin-bottom: 5px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 30px;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin: 6px 0 0;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* MENU */
+
+        .menu {
+            max-width: 650px;
+            margin: 25px auto;
+            padding: 0 15px;
+        }
+
+        .theme {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 72px;
+            margin-bottom: 14px;
+            padding: 12px 15px;
+
+            background: white;
+            color: #222;
+            text-decoration: none;
+
+            border-radius: 12px;
+            box-shadow: 0 2px 7px rgba(0,0,0,0.12);
+
+            text-align: center;
+            font-size: 17px;
+            font-weight: bold;
+
+            transition: transform 0.15s ease;
+        }
+
+        .theme:active {
+            transform: scale(0.98);
+        }
+
+        .emoji {
+            font-size: 28px;
+            margin-right: 12px;
+        }
+
+        /* PIED DE PAGE */
+
+        footer {
+            text-align: center;
+            color: #777;
+            font-size: 12px;
+            padding: 15px 10px 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🚒</div>
+    <h1>QPACRE 05</h1>
+    <p>SECOURISME</p>
+</header>
+
+<main class="menu">
+
+    <a class="theme" href="#">
+        <span class="emoji">📝</span>
+        <span>04 — GÉNÉRALITÉS SUR LES BILANS</span>
+    </a>
+
+    <a class="theme" href="#">
+        <span class="emoji">❤️</span>
+        <span>05 — URGENCES VITALES</span>
+    </a>
+
+    <a class="theme" href="#">
+        <span class="emoji">🩺</span>
+        <span>06 — MALAISES ET AFFECTIONS SPÉCIFIQUES</span>
+    </a>
+
+    <a class="theme" href="#">
+        <span class="emoji">🦴</span>
+        <span>07 — TRAUMATISMES</span>
+    </a>
+
+    <a class="theme" href="#">
+        <span class="emoji">⚠️</span>
+        <span>08 — ATTEINTES CIRCONSTANCIELLES</span>
+    </a>
+
+    <a class="theme" href="#">
+        <span class="emoji">🧠</span>
+        <span>09 — SOUFFRANCE PSYCHIQUE ET COMPORTEMENT</span>
+    </a>
+
+    <a class="theme" href="#">
+        <span class="emoji">🚨</span>
+        <span>11 — SITUATIONS PARTICULIÈRES</span>
+    </a>
+
+</main>
+
+<footer>
+    Mémo opérationnel — PSE
+</footer>
+
+</body>
+</html>
