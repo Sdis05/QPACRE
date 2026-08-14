@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>06AC01 — Malaises et aggravation de maladie</title>
+    <title>QPACRE 05 — Malaises et affections spécifiques</title>
 
     <style>
         * {
@@ -44,45 +44,75 @@
         }
 
         .conteneur {
-            max-width: 700px;
+            max-width: 650px;
             margin: 25px auto;
             padding: 0 15px;
         }
 
-        .bloc {
+        .fiche {
+            display: flex;
+            align-items: center;
+            min-height: 100px;
+
             background: white;
+            color: #222;
+            text-decoration: none;
+
             border-radius: 14px;
-            margin-bottom: 14px;
             box-shadow: 0 3px 9px rgba(0, 0, 0, 0.14);
-            overflow: hidden;
+
+            padding: 15px 18px;
+            margin-bottom: 18px;
+
+            transition: transform 0.15s ease,
+                        box-shadow 0.15s ease;
         }
 
-        .titre {
+        .fiche:active {
+            transform: scale(0.98);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+        }
+
+        .icone-fiche {
+            width: 62px;
+            height: 62px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
             background: #eeeeee;
+            border-radius: 12px;
+
+            font-size: 30px;
+            flex-shrink: 0;
+        }
+
+        .texte-fiche {
+            flex: 1;
+            padding: 0 15px;
+            text-align: left;
+        }
+
+        .numero {
+            display: block;
             color: #c90000;
-            font-size: 18px;
+            font-size: 14px;
             font-weight: bold;
-            padding: 13px 15px;
-            border-left: 6px solid #c90000;
+            margin-bottom: 5px;
         }
 
-        .contenu {
-            padding: 15px 17px;
-            font-size: 16px;
-            line-height: 1.45;
+        .titre-fiche {
+            display: block;
+            font-size: 17px;
+            font-weight: bold;
+            line-height: 1.25;
         }
 
-        ul {
-            margin: 0;
-            padding-left: 21px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        li:last-child {
-            margin-bottom: 0;
+        .fleche {
+            font-size: 32px;
+            color: #c90000;
+            font-weight: 300;
         }
 
         .retour {
@@ -113,137 +143,139 @@
 
     <div class="icone-header">🩺</div>
 
-    <h1>06AC01</h1>
+    <h1>MALAISES ET AFFECTIONS SPÉCIFIQUES</h1>
 
-    <p>MALAISES ET AGGRAVATION DE MALADIE</p>
+    <p>THÈME 06 — QPACRE 05</p>
 
 </header>
 
 
 <main class="conteneur">
 
-    <section class="bloc">
 
-        <div class="titre">
-            Q — QUAND ?
+    <a class="fiche" href="06AC01.html">
+
+        <div class="icone-fiche">🩺</div>
+
+        <div class="texte-fiche">
+            <span class="numero">06AC01</span>
+            <span class="titre-fiche">
+                MALAISES ET AGGRAVATION DE MALADIE
+            </span>
         </div>
 
-        <div class="contenu">
-            <ul>
-                <li>Devant toute victime consciente qui dit ne pas se sentir bien</li>
-                <li>Lorsqu’un témoin signale un comportement inhabituel</li>
-                <li>Lorsqu’une maladie connue semble s’aggraver</li>
-            </ul>
-        </div>
+        <div class="fleche">›</div>
 
-    </section>
-
-
-    <section class="bloc">
-
-        <div class="titre">
-            P — POURQUOI ?
-        </div>
-
-        <div class="contenu">
-            <ul>
-                <li>Rechercher une détresse vitale</li>
-                <li>Évaluer la gravité du malaise</li>
-                <li>Installer la victime confortablement</li>
-                <li>Obtenir rapidement un avis médical</li>
-                <li>Prévenir une aggravation</li>
-            </ul>
-        </div>
-
-    </section>
-
-
-    <section class="bloc">
-
-        <div class="titre">
-            A — AVEC QUOI ?
-        </div>
-
-        <div class="contenu">
-            <ul>
-                <li>Le bilan complet</li>
-                <li>L’interrogatoire</li>
-                <li>Les paramètres vitaux : FR, SpO₂, FC, PA, etc.</li>
-                <li>Le traitement personnel de la victime, uniquement à sa demande ou sur consigne médicale</li>
-                <li>Du sucre si indiqué</li>
-            </ul>
-        </div>
-
-    </section>
-
-
-    <section class="bloc">
-
-        <div class="titre">
-            C — COMMENT ?
-        </div>
-
-        <div class="contenu">
-            <ul>
-                <li>Évaluer rapidement : rechercher une détresse vitale et réaliser un bilan</li>
-                <li>Installer la victime : allongée si possible, assise si difficulté respiratoire, sinon dans la position la plus confortable</li>
-                <li>Aider si besoin : desserrer les vêtements</li>
-                <li>Aider la victime à prendre son traitement prescrit</li>
-                <li>Donner du sucre uniquement si indiqué</li>
-                <li>Surveiller l’évolution des signes et l’apparition d’une détresse vitale</li>
-                <li>Protéger la victime du froid, du chaud et des intempéries</li>
-            </ul>
-        </div>
-
-    </section>
-
-
-    <section class="bloc">
-
-        <div class="titre">
-            R — RISQUES ?
-        </div>
-
-        <div class="contenu">
-            <ul>
-                <li>Détresse respiratoire</li>
-                <li>Détresse circulatoire</li>
-                <li>AVC</li>
-                <li>Arrêt cardiaque</li>
-            </ul>
-        </div>
-
-    </section>
-
-
-    <section class="bloc">
-
-        <div class="titre">
-            E — EFFICACITÉ ?
-        </div>
-
-        <div class="contenu">
-            <ul>
-                <li>Victime installée confortablement</li>
-                <li>Victime rassurée</li>
-                <li>Avis médical obtenu</li>
-                <li>Surveillance continue</li>
-                <li>Aggravation détectée rapidement si elle survient</li>
-            </ul>
-        </div>
-
-    </section>
-
-
-    <a class="retour" href="index.html">
-        ← RETOUR AUX MALAISES ET AFFECTIONS SPÉCIFIQUES
     </a>
+
+
+    <a class="fiche" href="06AC02.html">
+
+        <div class="icone-fiche">❤️</div>
+
+        <div class="texte-fiche">
+            <span class="numero">06AC02</span>
+            <span class="titre-fiche">
+                DOULEUR THORACIQUE (NON TRAUMATIQUE)
+            </span>
+        </div>
+
+        <div class="fleche">›</div>
+
+    </a>
+
+
+    <a class="fiche" href="06AC03.html">
+
+        <div class="icone-fiche">🧠</div>
+
+        <div class="texte-fiche">
+            <span class="numero">06AC03</span>
+            <span class="titre-fiche">
+                ACCIDENT VASCULAIRE CÉRÉBRAL
+            </span>
+        </div>
+
+        <div class="fleche">›</div>
+
+    </a>
+
+
+    <a class="fiche" href="06AC04.html">
+
+        <div class="icone-fiche">⚡</div>
+
+        <div class="texte-fiche">
+            <span class="numero">06AC04</span>
+            <span class="titre-fiche">
+                CRISE CONVULSIVE GÉNÉRALISÉE
+            </span>
+        </div>
+
+        <div class="fleche">›</div>
+
+    </a>
+
+
+    <a class="fiche" href="06AC05.html">
+
+        <div class="icone-fiche">🫁</div>
+
+        <div class="texte-fiche">
+            <span class="numero">06AC05</span>
+            <span class="titre-fiche">
+                CRISE D’ASTHME
+            </span>
+        </div>
+
+        <div class="fleche">›</div>
+
+    </a>
+
+
+    <a class="fiche" href="06AC06.html">
+
+        <div class="icone-fiche">🍬</div>
+
+        <div class="texte-fiche">
+            <span class="numero">06AC06</span>
+            <span class="titre-fiche">
+                MALAISE HYPOGLYCÉMIQUE CHEZ LE DIABÉTIQUE
+            </span>
+        </div>
+
+        <div class="fleche">›</div>
+
+    </a>
+
+
+    <a class="fiche" href="06AC07.html">
+
+        <div class="icone-fiche">🚨</div>
+
+        <div class="texte-fiche">
+            <span class="numero">06AC07</span>
+            <span class="titre-fiche">
+                RÉACTION ALLERGIQUE GRAVE
+            </span>
+        </div>
+
+        <div class="fleche">›</div>
+
+    </a>
+
+
+    <a class="retour" href="../index.html">
+        ← RETOUR AUX THÈMES
+    </a>
+
 
 </main>
 
 
 <footer>
-    QPACRE — Secourisme FICHE RÉFLEXE RTN PSE 2026 
+    QPACRE — Secourisme<br>
+    FICHE RÉFLEXE RTN PSE 2026
 </footer>
 
 </body>
