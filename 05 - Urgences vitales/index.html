@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QPACRE 05 — Urgences vitales</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f3f3f3;
+            color: #222;
+        }
+
+        /* EN-TÊTE */
+
+        header {
+            background: #c90000;
+            color: white;
+            text-align: center;
+            padding: 28px 15px 25px;
+        }
+
+        .icone-header {
+            font-size: 42px;
+            margin-bottom: 8px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 25px;
+            letter-spacing: 0.5px;
+        }
+
+        header p {
+            margin: 7px 0 0;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* CONTENU */
+
+        .conteneur {
+            max-width: 650px;
+            margin: 25px auto;
+            padding: 0 15px;
+        }
+
+        /* BOUTONS */
+
+        .fiche {
+            display: flex;
+            align-items: center;
+            min-height: 100px;
+
+            background: white;
+            color: #222;
+            text-decoration: none;
+
+            border-radius: 14px;
+            box-shadow: 0 3px 9px rgba(0, 0, 0, 0.14);
+
+            padding: 15px 18px;
+            margin-bottom: 18px;
+
+            transition: transform 0.15s ease,
+                        box-shadow 0.15s ease;
+        }
+
+        .fiche:active {
+            transform: scale(0.98);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+        }
+
+        .icone-fiche {
+            width: 62px;
+            height: 62px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #eeeeee;
+            border-radius: 12px;
+
+            font-size: 30px;
+            flex-shrink: 0;
+        }
+
+        .texte-fiche {
+            flex: 1;
+            padding: 0 15px;
+            text-align: left;
+        }
+
+        .numero {
+            display: block;
+            color: #c90000;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .titre-fiche {
+            display: block;
+            font-size: 17px;
+            font-weight: bold;
+            line-height: 1.25;
+        }
+
+        .fleche {
+            font-size: 32px;
+            color: #c90000;
+            font-weight: 300;
+        }
+
+        /* RETOUR */
+
+        .retour {
+            display: block;
+
+            background: #222;
+            color: white;
+            text-decoration: none;
+
+            text-align: center;
+
+            padding: 14px;
+            margin-top: 28px;
+
+            border-radius: 10px;
+
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .retour:active {
+            transform: scale(0.98);
+        }
+
+        /* PIED DE PAGE */
+
+        footer {
+            text-align: center;
+            color: #777;
+            font-size: 12px;
+            padding: 15px 10px 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="icone-header">🚨</div>
+
+    <h1>URGENCES VITALES</h1>
+
+    <p>THÈME 05 — QPACRE 05</p>
+
+</header>
+
+
+<main class="conteneur">
+
+    <a class="fiche" href="05AC01.html">
+        <div class="icone-fiche">🫁</div>
+
+        <div class="texte-fiche">
+            <span class="numero">05AC01</span>
+            <span class="titre-fiche">LA BOUTEILLE D’OXYGÈNE</span>
+        </div>
+
+        <div class="fleche">›</div>
+    </a>
+
+
+    <a class="fiche" href="05AC02.html">
+        <div class="icone-fiche">🩸</div>
+
+        <div class="texte-fiche">
+            <span class="numero">05AC02</span>
+            <span class="titre-fiche">HÉMORRAGIES EXTERNES</span>
+        </div>
+
+        <div class="fleche">›</div>
+    </a>
+
+
+    <a class="fiche" href="05AC03.html">
+        <div class="icone-fiche">🩸</div>
+
+        <div class="texte-fiche">
+            <span class="numero">05AC03</span>
+            <span class="titre-fiche">HÉMORRAGIES EXTÉRIORISÉES</span>
+        </div>
+
+        <div class="fleche">›</div>
+    </a>
+
+
+    <a class="fiche" href="05AC04.html">
+        <div class="icone-fiche">😮</div>
+
+        <div class="texte-fiche">
+            <span class="numero">05AC04</span>
+            <span class="titre-fiche">OBSTRUCTION DES VOIES AÉRIENNES</span>
+        </div>
+
+        <div class="fleche">›</div>
+    </a>
+
+
+    <a class="fiche" href="05AC05.html">
+        <div class="icone-fiche">❤️</div>
+
+        <div class="texte-fiche">
+            <span class="numero">05AC05</span>
+            <span class="titre-fiche">ARRÊT CARDIAQUE</span>
+        </div>
+
+        <div class="fleche">›</div>
+    </a>
+
+
+    <a class="fiche" href="05AC06.html">
+        <div class="icone-fiche">🧠</div>
+
+        <div class="texte-fiche">
+            <span class="numero">05AC06</span>
+            <span class="titre-fiche">PERTE DE CONNAISSANCE</span>
+        </div>
+
+        <div class="fleche">›</div>
+    </a>
+
+
+    <a class="fiche" href="05AC07.html">
+        <div class="icone-fiche">🫁</div>
+
+        <div class="texte-fiche">
+            <span class="numero">05AC07</span>
+            <span class="titre-fiche">DÉTRESSE RESPIRATOIRE</span>
+        </div>
+
+        <div class="fleche">›</div>
+    </a>
+
+
+    <a class="fiche" href="05AC08.html">
+        <div class="icone-fiche">❤️</div>
+
+        <div class="texte-fiche">
+            <span class="numero">05AC08</span>
+            <span class="titre-fiche">DÉTRESSE CIRCULATOIRE</span>
+        </div>
+
+        <div class="fleche">›</div>
+    </a>
+
+
+    <a class="fiche" href="05AC09.html">
+        <div class="icone-fiche">🧠</div>
+
+        <div class="texte-fiche">
+            <span class="numero">05AC09</span>
+            <span class="titre-fiche">DÉTRESSE NEUROLOGIQUE</span>
+        </div>
+
+        <div class="fleche">›</div>
+    </a>
+
+
+    <a class="retour" href="../index.html">
+        ← RETOUR AUX THÈMES
+    </a>
+
+</main>
+
+
+<footer>
+    QPACRE 05 — Secourisme
+</footer>
+
+</body>
+</html>
