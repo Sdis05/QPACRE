@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mémo — Traumatisme</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f4f4;
+            color: #222;
+        }
+
+        /* EN-TÊTE */
+
+        header {
+            background: #c90000;
+            color: white;
+            text-align: center;
+            padding: 28px 15px 25px;
+        }
+
+        .icone-header {
+            font-size: 42px;
+            margin-bottom: 8px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 25px;
+            letter-spacing: 0.5px;
+        }
+
+        header p {
+            margin: 7px 0 0;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        /* CONTENU */
+
+        .conteneur {
+            max-width: 650px;
+            margin: 25px auto;
+            padding: 0 15px;
+        }
+
+        /* TITRES */
+
+        .titre-section {
+            font-size: 17px;
+            font-weight: bold;
+            color: #c90000;
+            margin: 25px 3px 12px;
+        }
+
+        /* BLOCS */
+
+        .bloc {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 7px rgba(0,0,0,0.12);
+            padding: 18px;
+            margin-bottom: 16px;
+        }
+
+        .bloc p {
+            margin: 0 0 10px;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        .bloc p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ALERTE */
+
+        .alerte {
+            background: #fff3f3;
+            border-left: 5px solid #c90000;
+            padding: 17px;
+            border-radius: 8px;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 16px;
+        }
+
+        .alerte strong {
+            color: #c90000;
+        }
+
+        /* BLOC NOIR */
+
+        .important {
+            background: #222;
+            color: white;
+            border-radius: 12px;
+            padding: 18px;
+            margin-bottom: 16px;
+        }
+
+        .important h2 {
+            margin: 0 0 12px;
+            font-size: 19px;
+        }
+
+        .important p {
+            margin: 0 0 10px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .important p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ÉTAPES */
+
+        .etape {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 14px;
+        }
+
+        .etape:last-child {
+            margin-bottom: 0;
+        }
+
+        .numero-etape {
+            width: 38px;
+            height: 38px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #c90000;
+            color: white;
+
+            border-radius: 8px;
+
+            font-size: 18px;
+            font-weight: bold;
+
+            flex-shrink: 0;
+        }
+
+        .texte-etape {
+            padding-left: 12px;
+            font-size: 14px;
+            line-height: 1.45;
+        }
+
+        .texte-etape strong {
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        /* CRITÈRES */
+
+        .critere {
+            background: #f7f7f7;
+            border-radius: 10px;
+            padding: 13px;
+            margin-bottom: 10px;
+
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .critere:last-child {
+            margin-bottom: 0;
+        }
+
+        .critere strong {
+            color: #c90000;
+        }
+
+        /* RETOUR */
+
+        .retour {
+            display: block;
+
+            background: #222;
+            color: white;
+
+            text-decoration: none;
+            text-align: center;
+
+            padding: 14px;
+            margin-top: 28px;
+
+            border-radius: 10px;
+
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .retour:active {
+            transform: scale(0.98);
+        }
+
+        /* PIED DE PAGE */
+
+        footer {
+            text-align: center;
+            color: #777;
+            font-size: 12px;
+            padding: 15px 10px 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="icone-header">🦴</div>
+
+    <h1>MÉMO — TRAUMATISME</h1>
+
+    <p>MÉMO OPÉRATIONNEL — CHEF D’AGRÈS</p>
+
+</header>
+
+
+<main class="conteneur">
+
+
+    <!-- BASSIN -->
+
+    <div class="titre-section">
+        🦴 TRAUMATISME DU BASSIN
+    </div>
+
+
+    <div class="important">
+
+        <h2>⚠️ NE PAS TESTER LE BASSIN</h2>
+
+        <p>
+            Le test du bassin peut augmenter le saignement
+            sans améliorer la détection du traumatisme.
+        </p>
+
+    </div>
+
+
+    <div class="bloc">
+
+        <p>
+            Considérer par défaut une suspicion de traumatisme
+            du bassin dans les situations suivantes :
+        </p>
+
+        <div class="critere">
+            <strong>→</strong>
+            Douleur du bassin après un accident
+        </div>
+
+        <div class="critere">
+            <strong>→</strong>
+            Victime inconsciente après un accident
+        </div>
+
+    </div>
+
+
+    <!-- CEINTURE -->
+
+    <div class="titre-section">
+        🟠 CEINTURE PELVIENNE
+    </div>
+
+
+    <div class="alerte">
+
+        <strong>⚠️ Pose sur indication médicale ou paramédicale</strong><br><br>
+
+        La ceinture pelvienne ne doit être mise en place
+        que sur indication d’un médecin ou d’un infirmier
+        du SSSM, d’un MCS ou du médecin régulateur du C15.
+
+    </div>
+
+
+    <div class="bloc">
+
+        <p>
+            L’équipage doit cependant être formé à son
+            utilisation afin de pouvoir réaliser rapidement
+            sa mise en place lorsqu’elle est indiquée.
+        </p>
+
+        <br>
+
+        <p>
+            <strong>Procédure :</strong>
+        </p>
+
+        <p>
+            • Victime adulte<br>
+            • À plat dos<br>
+            • Mise en place à deux secouristes
+        </p>
+
+    </div>
+
+
+    <!-- RACHIS -->
+
+    <div class="titre-section">
+        🦴 RACHIS / COLLIER CERVICAL
+    </div>
+
+
+    <div class="bloc">
+
+        <p>
+            Un collier cervical peut être mis en place
+            lorsqu’une lésion du rachis est suspectée,
+            après installation de la tête en position neutre
+            et avant tout déplacement.
+        </p>
+
+        <br>
+
+        <p>
+            <strong>⚠️ La pose d’un collier cervical implique
+            une immobilisation complète du rachis.</strong>
+        </p>
+
+        <p>
+            Celle-ci peut être réalisée notamment avec :
+            attelle cervico-thoracique, plan dur avec
+            cales-tête et sangle araignée ou matelas
+            immobilisateur à dépression.
+        </p>
+
+    </div>
+
+
+    <!-- PRIORITÉ -->
+
+    <div class="titre-section">
+        🚨 PRIORITÉ AUX DÉTRESSES VITALES
+    </div>
+
+
+    <div class="important">
+
+        <h2>EXTRACTION RAPIDE</h2>
+
+        <p>
+            L’immobilisation complète du rachis n’est pas
+            prioritaire sur le dégagement d’urgence face
+            à une détresse vitale.
+        </p>
+
+        <p>
+            L’objectif est de réduire le délai d’évacuation
+            vers une structure adaptée.
+        </p>
+
+    </div>
+
+
+    <!-- CRITÈRES -->
+
+    <div class="titre-section">
+        ⚠️ URGENCE ABSOLUE
+    </div>
+
+
+    <div class="bloc">
+
+        <p>
+            La note indique notamment de considérer comme
+            urgence absolue une victime d’accident présentant :
+        </p>
+
+        <div class="critere">
+            <strong>Pouls &gt; 120/min</strong>
+        </div>
+
+        <div class="critere">
+            <strong>Pouls radial absent</strong>
+        </div>
+
+        <div class="critere">
+            <strong>Pression artérielle systolique &lt; 90 mmHg</strong>
+        </div>
+
+        <div class="critere">
+            <strong>Fréquence respiratoire &gt; 30/min</strong>
+        </div>
+
+    </div>
+
+
+    <div class="alerte">
+
+        <strong>❄️ Conditions froides</strong><br><br>
+
+        La note rappelle que l’hypothermie peut rapidement
+        majorer l’hémorragie : l’extraction rapide est
+        d’autant plus importante dans ces conditions.
+
+    </div>
+
+
+    <!-- RÉFLEXE -->
+
+    <div class="titre-section">
+        🧠 RÉFLEXE CHEF D’AGRÈS
+    </div>
+
+
+    <div class="bloc">
+
+        <p>
+            <strong>Traumatisme + suspicion bassin</strong>
+        </p>
+
+        <p>
+            → Ne pas tester<br>
+            → Préparer la ceinture<br>
+            → Pose sur indication médicale / paramédicale
+        </p>
+
+        <br>
+
+        <p>
+            <strong>Traumatisme + détresse vitale</strong>
+        </p>
+
+        <p>
+            → Priorité à l’extraction / évacuation<br>
+            → Ne pas retarder la prise en charge vitale
+        </p>
+
+    </div>
+
+
+    <!-- RETOUR -->
+
+    <a class="retour" href="index.html">
+        ← RETOUR AUX RECOMMANDATIONS
+    </a>
+
+</main>
+
+
+<footer>
+    RECOMMANDATIONS DU MÉDECIN-CHEF
+</footer>
+
+</body>
+</html>
