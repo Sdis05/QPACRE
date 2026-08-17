@@ -87,6 +87,56 @@
             margin-right: 12px;
         }
 
+        /* RETOUR UTILISATEUR */
+
+.feedback {
+    display: flex;
+    align-items: center;
+
+    min-height: 72px;
+    margin: 28px auto 0;
+    padding: 12px 15px;
+
+    background: #222;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 12px;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.15);
+
+    transition: transform 0.15s ease;
+}
+
+.feedback:active {
+    transform: scale(0.98);
+}
+
+.feedback-icone {
+    font-size: 28px;
+    margin-right: 12px;
+}
+
+.feedback-texte {
+    flex: 1;
+    text-align: left;
+}
+
+.feedback-texte strong {
+    display: block;
+    font-size: 16px;
+}
+
+.feedback-texte small {
+    display: block;
+    margin-top: 4px;
+    color: #cccccc;
+    font-size: 12px;
+}
+
+.feedback-fleche {
+    font-size: 30px;
+}
         /* PIED DE PAGE */
 
         footer {
@@ -162,6 +212,25 @@
     <span class="emoji">🩺</span>
     <span>RECOMMANDATIONS DU MÉDECIN-CHEF</span>
 </a>
+    
+    <a
+        class="feedback"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSfMK0ga_D1V-pMyxBjGcftgGL-dXyGXFISB3-LfH4_99Df48Q/viewform"
+        target="_blank"
+        rel="noopener"
+    >
+
+        <span class="feedback-icone">💬</span>
+
+        <span class="feedback-texte">
+            <strong>UNE REMARQUE ?</strong>
+            <small>Question • Correction • Suggestion</small>
+        </span>
+
+        <span class="feedback-fleche">›</span>
+
+    </a>
+    
 
 </main>
 
