@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mémo — Nombreuses victimes / START</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f4f4;
+            color: #222;
+        }
+
+        header {
+            background: #c90000;
+            color: white;
+            text-align: center;
+            padding: 28px 15px 25px;
+        }
+
+        .icone-header {
+            font-size: 42px;
+            margin-bottom: 8px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            letter-spacing: 0.5px;
+        }
+
+        header p {
+            margin: 7px 0 0;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        .conteneur {
+            max-width: 650px;
+            margin: 25px auto;
+            padding: 0 15px;
+        }
+
+        .titre-section {
+            font-size: 17px;
+            font-weight: bold;
+            color: #c90000;
+            margin: 25px 3px 12px;
+        }
+
+        .bloc {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 7px rgba(0,0,0,0.12);
+            padding: 18px;
+            margin-bottom: 16px;
+        }
+
+        .bloc p {
+            margin: 0 0 10px;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        .bloc p:last-child {
+            margin-bottom: 0;
+        }
+
+        .regle {
+            background: #222;
+            color: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .regle strong {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .regle span {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .alerte {
+            background: #fff3f3;
+            border-left: 5px solid #c90000;
+            padding: 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 16px;
+        }
+
+        .categorie {
+            display: flex;
+            align-items: center;
+            background: #f7f7f7;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        .categorie:last-child {
+            margin-bottom: 0;
+        }
+
+        .couleur {
+            width: 48px;
+            height: 48px;
+            border-radius: 8px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+
+            flex-shrink: 0;
+        }
+
+        .rouge {
+            background: #c90000;
+        }
+
+        .jaune {
+            background: #d6a800;
+        }
+
+        .vert {
+            background: #278a42;
+        }
+
+        .noir {
+            background: #222;
+        }
+
+        .texte {
+            padding-left: 14px;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .texte strong {
+            display: block;
+            font-size: 17px;
+            margin-bottom: 3px;
+        }
+
+        .etape {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 14px;
+        }
+
+        .etape:last-child {
+            margin-bottom: 0;
+        }
+
+        .numero {
+            width: 38px;
+            height: 38px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #c90000;
+            color: white;
+
+            border-radius: 8px;
+
+            font-size: 18px;
+            font-weight: bold;
+
+            flex-shrink: 0;
+        }
+
+        .texte-etape {
+            padding-left: 12px;
+            font-size: 14px;
+            line-height: 1.45;
+        }
+
+        .texte-etape strong {
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .retour {
+            display: block;
+
+            background: #222;
+            color: white;
+
+            text-decoration: none;
+            text-align: center;
+
+            padding: 14px;
+            margin-top: 28px;
+
+            border-radius: 10px;
+
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .retour:active {
+            transform: scale(0.98);
+        }
+
+        footer {
+            text-align: center;
+            color: #777;
+            font-size: 12px;
+            padding: 15px 10px 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="icone-header">🚨</div>
+
+    <h1>MÉMO — NOMBREUSES VICTIMES / START</h1>
+
+    <p>MÉMO OPÉRATIONNEL — CHEF D’AGRÈS</p>
+
+</header>
+
+
+<main class="conteneur">
+
+
+    <!-- DÉCLENCHEMENT -->
+
+    <div class="titre-section">
+        🚨 QUAND UTILISER START ?
+    </div>
+
+
+    <div class="regle">
+
+        <strong>👥 NOMBREUSES VICTIMES</strong>
+
+        <span>
+            Appliquer START dès que le nombre de victimes
+            apparemment graves dépasse le nombre de
+            secouristes présents.
+        </span>
+
+    </div>
+
+
+    <!-- OBJECTIF -->
+
+    <div class="titre-section">
+        🎯 OBJECTIF DU TRI
+    </div>
+
+
+    <div class="bloc">
+
+        <p>
+            Le but n’est pas de prendre en charge
+            individuellement toutes les victimes immédiatement.
+        </p>
+
+        <p>
+            Il faut <strong>sauver le maximum de personnes
+            possible avec les moyens disponibles</strong>.
+        </p>
+
+    </div>
+
+
+    <!-- PRIORITÉ -->
+
+    <div class="titre-section">
+        🔴 PRIORITÉ AUX URGENCES ABSOLUES
+    </div>
+
+
+    <div class="bloc">
+
+        <p>
+            Les victimes présentant une urgence absolue
+            doivent être identifiées en priorité.
+        </p>
+
+        <p>
+            Elles peuvent bénéficier d’une évacuation rapide
+            sans passage au PMA lorsque la situation le justifie.
+        </p>
+
+    </div>
+
+
+    <!-- TRI -->
+
+    <div class="titre-section">
+        🏷️ CATÉGORIES DE TRI
+    </div>
+
+
+    <div class="bloc">
+
+
+        <div class="categorie">
+
+            <div class="couleur rouge">
+                UA
+            </div>
+
+            <div class="texte">
+
+                <strong>Urgence absolue</strong>
+
+                Victime nécessitant une prise en charge
+                et une évacuation prioritaires.
+
+            </div>
+
+        </div>
+
+
+        <div class="categorie">
+
+            <div class="couleur jaune">
+                UR
+            </div>
+
+            <div class="texte">
+
+                <strong>Urgence relative</strong>
+
+                Victime nécessitant des soins mais pouvant
+                attendre par rapport aux urgences absolues.
+
+            </div>
+
+        </div>
+
+
+        <div class="categorie">
+
+            <div class="couleur vert">
+                U3
+            </div>
+
+            <div class="texte">
+
+                <strong>Impliqué valide</strong>
+
+                Victime pouvant se déplacer ou ne présentant
+                pas de détresse immédiate.
+
+            </div>
+
+        </div>
+
+
+        <div class="categorie">
+
+            <div class="couleur noir">
+                DCD
+            </div>
+
+            <div class="texte">
+
+                <strong>Décédé / sans possibilité de prise en charge immédiate</strong>
+
+                Catégorie déterminée selon la méthode de tri
+                et les moyens disponibles.
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ORGANISATION -->
+
+    <div class="titre-section">
+        📍 OÙ APPLIQUER LE TRI ?
+    </div>
+
+
+    <div class="bloc">
+
+        <div class="etape">
+
+            <div class="numero">
+                1
+            </div>
+
+            <div class="texte-etape">
+
+                <strong>Point zéro</strong>
+
+                Le triage peut être réalisé dès le point zéro
+                par les intervenants chargés du repérage
+                secouriste.
+
+            </div>
+
+        </div>
+
+
+        <div class="etape">
+
+            <div class="numero">
+                2
+            </div>
+
+            <div class="texte-etape">
+
+                <strong>PRV</strong>
+
+                La méthode START est également utilisée
+                au point de regroupement des victimes.
+
+            </div>
+
+        </div>
+
+
+        <div class="etape">
+
+            <div class="numero">
+                3
+            </div>
+
+            <div class="texte-etape">
+
+                <strong>PMA</strong>
+
+                Les victimes qui ne sont pas évacuées
+                directement depuis le PRV font ensuite
+                l’objet d’un triage médical à l’entrée
+                du PMA.
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- SUR-TRIAGE -->
+
+    <div class="titre-section">
+        ⚠️ ÉVITER LE SUR-TRIAGE
+    </div>
+
+
+    <div class="alerte">
+
+        <strong>Ne pas classer « urgence absolue » une victime
+        qui ne nécessite pas de geste salvateur immédiat.</strong>
+
+        <br><br>
+
+        Un excès d’urgences absolues complique ensuite
+        la priorisation des soins et des évacuations.
+
+    </div>
+
+
+    <!-- RÉFLEXE -->
+
+    <div class="titre-section">
+        🧠 RÉFLEXE CHEF D’AGRÈS
+    </div>
+
+
+    <div class="bloc">
+
+        <p>
+            <strong>Beaucoup de victimes + moyens limités :</strong>
+        </p>
+
+        <p>
+            → Organiser le tri<br>
+            → Prioriser les urgences absolues<br>
+            → Éviter le sur-triage<br>
+            → Orienter les victimes selon les priorités<br>
+            → Garder l’objectif : sauver le maximum de victimes
+        </p>
+
+    </div>
+
+
+    <!-- RETOUR -->
+
+    <a class="retour" href="index.html">
+        ← RETOUR AUX RECOMMANDATIONS
+    </a>
+
+</main>
+
+
+<footer>
+    RECOMMANDATIONS DU MÉDECIN-CHEF
+</footer>
+
+</body>
+</html>
