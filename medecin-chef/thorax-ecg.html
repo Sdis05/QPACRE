@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QPACRE — Thorax / ECG</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f4f4;
+            color: #222;
+        }
+
+        /* EN-TÊTE */
+
+        header {
+            background: #c90000;
+            color: white;
+            text-align: center;
+            padding: 28px 15px 25px;
+        }
+
+        .icone-header {
+            font-size: 42px;
+            margin-bottom: 8px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 25px;
+            letter-spacing: 0.5px;
+        }
+
+        header p {
+            margin: 7px 0 0;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        /* CONTENU */
+
+        .conteneur {
+            max-width: 650px;
+            margin: 25px auto;
+            padding: 0 15px;
+        }
+
+        /* TITRES */
+
+        .titre-section {
+            font-size: 17px;
+            font-weight: bold;
+            color: #c90000;
+
+            margin: 25px 3px 12px;
+        }
+
+        /* BLOCS */
+
+        .bloc {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 7px rgba(0,0,0,0.12);
+
+            padding: 18px;
+            margin-bottom: 16px;
+        }
+
+        .bloc p {
+            margin: 0 0 10px;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        .bloc p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ALERTE */
+
+        .alerte {
+            background: #fff3f3;
+            border-left: 5px solid #c90000;
+
+            padding: 15px;
+
+            border-radius: 8px;
+
+            font-size: 14px;
+            line-height: 1.5;
+
+            margin-bottom: 16px;
+        }
+
+        .alerte strong {
+            color: #c90000;
+        }
+
+        /* ÉTAPES */
+
+        .etape {
+            display: flex;
+            align-items: flex-start;
+
+            margin-bottom: 14px;
+        }
+
+        .numero-etape {
+            width: 38px;
+            height: 38px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #c90000;
+            color: white;
+
+            border-radius: 8px;
+
+            font-size: 18px;
+            font-weight: bold;
+
+            flex-shrink: 0;
+        }
+
+        .texte-etape {
+            padding-left: 12px;
+
+            font-size: 14px;
+            line-height: 1.45;
+        }
+
+        .texte-etape strong {
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        /* CHECKLIST */
+
+        .check {
+            margin-bottom: 10px;
+
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .check:last-child {
+            margin-bottom: 0;
+        }
+
+        /* SCA */
+
+        .sca {
+            background: #222;
+            color: white;
+
+            border-radius: 12px;
+
+            padding: 18px;
+
+            margin-bottom: 16px;
+        }
+
+        .sca h2 {
+            margin: 0 0 14px;
+
+            font-size: 18px;
+        }
+
+        .sca p {
+            margin: 0 0 10px;
+
+            font-size: 14px;
+            line-height: 1.45;
+        }
+
+        .sca p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* RETOUR */
+
+        .retour {
+            display: block;
+
+            background: #222;
+            color: white;
+
+            text-decoration: none;
+            text-align: center;
+
+            padding: 14px;
+            margin-top: 28px;
+
+            border-radius: 10px;
+
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .retour:active {
+            transform: scale(0.98);
+        }
+
+        /* PIED DE PAGE */
+
+        footer {
+            text-align: center;
+            color: #777;
+            font-size: 12px;
+            padding: 15px 10px 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="icone-header">❤️</div>
+
+    <h1>THORAX / ECG</h1>
+
+    <p>MÉMO CHEF D’AGRÈS</p>
+
+</header>
+
+
+<main class="conteneur">
+
+
+    <!-- INDICATIONS -->
+
+    <div class="titre-section">
+        ❤️ CEINTURE ECG
+    </div>
+
+
+    <div class="bloc">
+
+        <p>
+            L’utilisation de la ceinture ECG est possible
+            après la mise en sécurité de la victime et
+            la réalisation du bilan primaire.
+        </p>
+
+        <div class="check">
+            ✓ Malaise non expliqué
+        </div>
+
+        <div class="check">
+            ✓ Douleur thoracique
+        </div>
+
+        <div class="check">
+            ✓ Sur demande du médecin régulateur
+        </div>
+
+    </div>
+
+
+    <div class="alerte">
+
+        <strong>⚠️ Accord du médecin régulateur</strong><br><br>
+
+        Pour un malaise non expliqué ou une douleur
+        thoracique, l’utilisation de la ceinture ECG
+        se fait après proposition du responsable de
+        l’intervention ou du chef d’agrès et accord
+        du médecin régulateur.
+
+    </div>
+
+
+    <!-- AVANT -->
+
+    <div class="titre-section">
+        1️⃣ AVANT L’ECG
+    </div>
+
+
+    <div class="bloc">
+
+        <div class="check">
+            ✓ Victime en sécurité
+        </div>
+
+        <div class="check">
+            ✓ Bilan primaire réalisé
+        </div>
+
+        <div class="check">
+            ✓ Victime installée confortablement
+        </div>
+
+        <div class="check">
+            ✓ Si possible, victime allongée sur le dos
+        </div>
+
+        <div class="check">
+            ✓ Environnement calme
+        </div>
+
+        <div class="check">
+            ✓ Victime immobile et ne parlant pas pendant l’examen
+        </div>
+
+    </div>
+
+
+    <div class="alerte">
+
+        <strong>🚫 Pas d’ECG dans un VSAV en mouvement</strong><br><br>
+
+        L’examen nécessite que la victime reste
+        immobile et ne parle pas.
+
+    </div>
+
+
+    <!-- INSTALLATION -->
+
+    <div class="titre-section">
+        2️⃣ MISE EN PLACE
+    </div>
+
+
+    <div class="bloc">
+
+        <div class="etape">
+
+            <div class="numero-etape">
+                1
+            </div>
+
+            <div class="texte-etape">
+
+                <strong>Installer la victime</strong>
+
+                La mettre confortablement, si possible
+                allongée sur le dos.
+
+            </div>
+
+        </div>
+
+
+        <div class="etape">
+
+            <div class="numero-etape">
+                2
+            </div>
+
+            <div class="texte-etape">
+
+                <strong>Découvrir le torse</strong>
+
+                Respecter l’intimité de la victime.
+                Les vêtements peuvent être retirés
+                puis la victime recouverte.
+
+            </div>
+
+        </div>
+
+
+        <div class="etape">
+
+            <div class="numero-etape">
+                3
+            </div>
+
+            <div class="texte-etape">
+
+                <strong>Installer la ceinture ECG</strong>
+
+                Selon la notice et les principes enseignés
+                lors de la formation.
+
+            </div>
+
+        </div>
+
+
+        <div class="etape">
+
+            <div class="numero-etape">
+                4
+            </div>
+
+            <div class="texte-etape">
+
+                <strong>Ne pas oublier la pince verte</strong>
+
+                La pince crocodile verte est placée
+                sur la jambe gauche.
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- TRANSMISSION -->
+
+    <div class="titre-section">
+        3️⃣ TRANSMISSION DU TRACÉ
+    </div>
+
+
+    <div class="bloc">
+
+        <div class="etape">
+
+            <div class="numero-etape">
+                1
+            </div>
+
+            <div class="texte-etape">
+
+                <strong>Envoyer le tracé</strong>
+
+                Utiliser la tablette du CIS pour envoyer
+                le tracé ECG au Centre 15 + SSSM.
+
+            </div>
+
+        </div>
+
+
+        <div class="etape">
+
+            <div class="numero-etape">
+                2
+            </div>
+
+            <div class="texte-etape">
+
+                <strong>Renseigner l’objet du mail</strong>
+
+                Nom du véhicule + centre d’appartenance.
+
+                <br><br>
+
+                Exemple : <strong>VSAV Gandière</strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="etape">
+
+            <div class="numero-etape">
+                3
+            </div>
+
+            <div class="texte-etape">
+
+                <strong>Rappeler le 15 via le 18</strong>
+
+                Vérifier la bonne réception du tracé
+                et obtenir la conduite à tenir.
+
+            </div>
+
+        </div>
+
+
+        <div class="etape">
+
+            <div class="numero-etape">
+                4
+            </div>
+
+            <div class="texte-etape">
+
+                <strong>Retrait du dispositif</strong>
+
+                Demander l’autorisation au médecin
+                régulateur avant de retirer la ceinture.
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- SCA -->
+
+    <div class="titre-section">
+        ❤️‍🩹 SCA SUSPECTÉ
+    </div>
+
+
+    <div class="sca">
+
+        <h2>🚨 PRIORITÉS</h2>
+
+        <p>
+            <strong>→ Garder la victime au calme</strong><br>
+            Aucun effort.
+        </p>
+
+        <p>
+            <strong>→ Évacuation rapide</strong><br>
+            Le pronostic vital dépend de la rapidité
+            de prise en charge.
+        </p>
+
+        <p>
+            <strong>→ O₂ si SpO₂ ≤ 94 %</strong>
+        </p>
+
+        <p>
+            <strong>→ Préparer immédiatement le matériel ACR</strong><br>
+            DSA • BAVU • O₂ • aspirateur de mucosités
+        </p>
+
+        <p>
+            <strong>→ Renfort médical</strong><br>
+            À rechercher si cela n’entraîne pas
+            de retard de prise en charge.
+        </p>
+
+    </div>
+
+
+    <!-- RETOUR -->
+
+    <a class="retour" href="index.html">
+        ← RETOUR AUX RECOMMANDATIONS
+    </a>
+
+</main>
+
+
+<footer>
+    QPACRE — Secourisme<br>
+    Recommandations du Médecin-Chef
+</footer>
+
+</body>
+</html>
