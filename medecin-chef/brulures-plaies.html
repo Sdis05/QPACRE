@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mémo — Brûlures / Plaies</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f4f4;
+            color: #222;
+        }
+
+        /* EN-TÊTE */
+
+        header {
+            background: #c90000;
+            color: white;
+            text-align: center;
+            padding: 28px 15px 25px;
+        }
+
+        .icone-header {
+            font-size: 42px;
+            margin-bottom: 8px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 25px;
+            letter-spacing: 0.5px;
+        }
+
+        header p {
+            margin: 7px 0 0;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        /* CONTENU */
+
+        .conteneur {
+            max-width: 650px;
+            margin: 25px auto;
+            padding: 0 15px;
+        }
+
+        /* TITRES */
+
+        .titre-section {
+            font-size: 17px;
+            font-weight: bold;
+            color: #c90000;
+            margin: 25px 3px 12px;
+        }
+
+        /* BLOCS */
+
+        .bloc {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 7px rgba(0,0,0,0.12);
+            padding: 18px;
+            margin-bottom: 16px;
+        }
+
+        .bloc p {
+            margin: 0 0 10px;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        .bloc p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* RÈGLE PRINCIPALE */
+
+        .regle {
+            background: #222;
+            color: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .regle strong {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .regle span {
+            font-size: 14px;
+        }
+
+        /* ALERTE */
+
+        .alerte {
+            background: #fff3f3;
+            border-left: 5px solid #c90000;
+            padding: 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 16px;
+        }
+
+        .alerte strong {
+            color: #c90000;
+        }
+
+        /* CONDITIONS */
+
+        .condition {
+            display: flex;
+            align-items: flex-start;
+            background: #f7f7f7;
+            border-radius: 10px;
+            padding: 13px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .condition:last-child {
+            margin-bottom: 0;
+        }
+
+        .condition-icone {
+            width: 30px;
+            flex-shrink: 0;
+            font-size: 20px;
+        }
+
+        /* TROIS CÔTÉS */
+
+        .trois-cotes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: #f7f7f7;
+
+            border-radius: 12px;
+
+            padding: 20px;
+
+            margin-bottom: 16px;
+        }
+
+        .schema {
+            position: relative;
+
+            width: 190px;
+            height: 130px;
+
+            border: 3px solid #222;
+
+            border-radius: 8px;
+
+            background: white;
+        }
+
+        .schema .haut {
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            right: -3px;
+
+            height: 6px;
+
+            background: #c90000;
+        }
+
+        .schema .gauche {
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            bottom: -3px;
+
+            width: 6px;
+
+            background: #c90000;
+        }
+
+        .schema .droite {
+            position: absolute;
+            top: -3px;
+            right: -3px;
+            bottom: -3px;
+
+            width: 6px;
+
+            background: #c90000;
+        }
+
+        .schema .bas {
+            position: absolute;
+            bottom: -3px;
+            left: -3px;
+            right: -3px;
+
+            height: 6px;
+
+            background: #222;
+        }
+
+        .legende {
+            margin-left: 18px;
+
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        /* RETOUR */
+
+        .retour {
+            display: block;
+
+            background: #222;
+            color: white;
+
+            text-decoration: none;
+            text-align: center;
+
+            padding: 14px;
+            margin-top: 28px;
+
+            border-radius: 10px;
+
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .retour:active {
+            transform: scale(0.98);
+        }
+
+        /* PIED DE PAGE */
+
+        footer {
+            text-align: center;
+            color: #777;
+            font-size: 12px;
+            padding: 15px 10px 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="icone-header">🔥</div>
+
+    <h1>MÉMO — BRÛLURES / PLAIES</h1>
+
+    <p>MÉMO OPÉRATIONNEL — CHEF D’AGRÈS</p>
+
+</header>
+
+
+<main class="conteneur">
+
+
+    <!-- BRÛLURES -->
+
+    <div class="titre-section">
+        🔥 BRÛLURE THERMIQUE
+    </div>
+
+
+    <div class="regle">
+
+        <strong>💧 EAU TEMPÉRÉE</strong>
+
+        <span>
+            Ruissellement sans pression • le plus tôt possible
+        </span>
+
+    </div>
+
+
+    <div class="bloc">
+
+        <p>
+            Le refroidissement s’effectue avec de l’eau
+            tempérée, par ruissellement et sans pression
+            sur la zone brûlée.
+        </p>
+
+        <p>
+            Pour une brûlure simple, le refroidissement
+            peut être poursuivi jusqu’à disparition de
+            la douleur.
+        </p>
+
+    </div>
+
+
+    <!-- NE PAS REFROIDIR -->
+
+    <div class="titre-section">
+        ⚠️ NE PAS REFROIDIR SI...
+    </div>
+
+
+    <div class="bloc">
+
+        <div class="condition">
+
+            <div class="condition-icone">
+                ⏱️
+            </div>
+
+            <div>
+                Survenue de la brûlure depuis <strong>plus de 30 minutes</strong>.
+            </div>
+
+        </div>
+
+
+        <div class="condition">
+
+            <div class="condition-icone">
+                🧠
+            </div>
+
+            <div>
+                Victime <strong>inconsciente</strong>.
+            </div>
+
+        </div>
+
+
+        <div class="condition">
+
+            <div class="condition-icone">
+                👤
+            </div>
+
+            <div>
+                Surface corporelle brûlée <strong>≥ 30 % chez l’adulte</strong>.
+            </div>
+
+        </div>
+
+
+        <div class="condition">
+
+            <div class="condition-icone">
+                👦
+            </div>
+
+            <div>
+                Surface corporelle brûlée <strong>≥ 10 % chez l’enfant</strong>.
+            </div>
+
+        </div>
+
+
+        <div class="condition">
+
+            <div class="condition-icone">
+                👶
+            </div>
+
+            <div>
+                Surface corporelle brûlée <strong>≥ 5 % chez le nourrisson</strong>.
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PROTECTION -->
+
+    <div class="titre-section">
+        🛡️ PROTECTION
+    </div>
+
+
+    <div class="bloc">
+
+        <p>
+            Protéger la brûlure avec des champs stériles
+            ou des draps.
+        </p>
+
+        <p>
+            Pour une brûlure étendue, envelopper également
+            la victime dans une couverture isotherme afin
+            de lutter contre l’hypothermie.
+        </p>
+
+    </div>
+
+
+    <div class="alerte">
+
+        <strong>💧 Compresses hydrogel</strong><br><br>
+
+        Elles constituent une alternative au refroidissement
+        par l’eau et doivent être réservées aux situations
+        exceptionnelles d’absence de point d’eau tempérée.
+
+    </div>
+
+
+    <!-- PLAIE THORACIQUE -->
+
+    <div class="titre-section">
+        🫁 PLAIE THORACIQUE
+    </div>
+
+
+    <div class="regle">
+
+        <strong>🚨 JAMAIS TOTALLEMENT OCCLUSIF</strong>
+
+        <span>
+            Réaliser un pansement non occlusif « 3 côtés »
+        </span>
+
+    </div>
+
+
+    <div class="bloc">
+
+        <p>
+            Notamment en présence d’une plaie soufflante
+            avec de l’air sortant par la plaie.
+        </p>
+
+        <p>
+            Utiliser la partie plastique de l’emballage
+            des compresses, matière étanche, appliquée
+            sur la plaie.
+        </p>
+
+    </div>
+
+
+    <!-- SCHÉMA -->
+
+    <div class="titre-section">
+        📌 PANSEMENT 3 CÔTÉS
+    </div>
+
+
+    <div class="trois-cotes">
+
+        <div class="schema">
+
+            <div class="haut"></div>
+
+            <div class="gauche"></div>
+
+            <div class="droite"></div>
+
+            <div class="bas"></div>
+
+        </div>
+
+
+        <div class="legende">
+
+            <strong>3 côtés fixés</strong><br>
+            1 côté libre<br><br>
+
+            Le bord libre doit toujours
+            se trouver vers le bas.
+
+        </div>
+
+    </div>
+
+
+    <div class="alerte">
+
+        <strong>⬇️ Bord libre vers le bas</strong><br><br>
+
+        Le choix du bord libre dépend de la position
+        de la victime afin de permettre l’écoulement
+        des liquides et d’éviter l’obstruction de la plaie.
+
+    </div>
+
+
+    <!-- RÉFLEXE -->
+
+    <div class="titre-section">
+        🧠 RÉFLEXE CHEF D’AGRÈS
+    </div>
+
+
+    <div class="bloc">
+
+        <p>
+            <strong>Brûlure thermique</strong>
+        </p>
+
+        <p>
+            → Eau tempérée<br>
+            → Ruissellement sans pression<br>
+            → Prévenir l’hypothermie
+        </p>
+
+        <br>
+
+        <p>
+            <strong>Plaie thoracique</strong>
+        </p>
+
+        <p>
+            → Jamais totalement occlusif<br>
+            → Pansement 3 côtés<br>
+            → Bord libre vers le bas
+        </p>
+
+    </div>
+
+
+    <!-- RETOUR -->
+
+    <a class="retour" href="index.html">
+        ← RETOUR AUX RECOMMANDATIONS
+    </a>
+
+</main>
+
+
+<footer>
+    RECOMMANDATIONS DU MÉDECIN-CHEF
+</footer>
+
+</body>
+</html>
