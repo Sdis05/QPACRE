@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QPACRE — Recommandations du Médecin-Chef</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f3f3f3;
+            color: #222;
+        }
+
+        /* EN-TÊTE */
+
+        header {
+            background: #c90000;
+            color: white;
+            text-align: center;
+            padding: 28px 15px 25px;
+        }
+
+        .icone-header {
+            font-size: 42px;
+            margin-bottom: 8px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            letter-spacing: 0.5px;
+        }
+
+        header p {
+            margin: 8px 0 0;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        /* CONTENU */
+
+        .conteneur {
+            max-width: 650px;
+            margin: 25px auto;
+            padding: 0 15px;
+        }
+
+        /* ENCART INFORMATION */
+
+        .information {
+            background: white;
+            border-radius: 14px;
+            box-shadow: 0 3px 9px rgba(0, 0, 0, 0.14);
+
+            padding: 18px;
+            margin-bottom: 22px;
+
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        .information strong {
+            color: #c90000;
+        }
+
+        /* TITRE DE RUBRIQUE */
+
+        .titre-section {
+            font-size: 14px;
+            font-weight: bold;
+            color: #555;
+
+            margin: 22px 5px 12px;
+
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* BOUTON FICHE */
+
+        .fiche {
+            display: flex;
+            align-items: center;
+            min-height: 88px;
+
+            background: white;
+            color: #222;
+            text-decoration: none;
+
+            border-radius: 14px;
+            box-shadow: 0 3px 9px rgba(0, 0, 0, 0.14);
+
+            padding: 13px 16px;
+            margin-bottom: 14px;
+
+            transition: transform 0.15s ease,
+                        box-shadow 0.15s ease;
+        }
+
+        .fiche:active {
+            transform: scale(0.98);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+        }
+
+        .icone-fiche {
+            width: 58px;
+            height: 58px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #eeeeee;
+            border-radius: 12px;
+
+            font-size: 28px;
+            flex-shrink: 0;
+        }
+
+        .texte-fiche {
+            flex: 1;
+            padding: 0 14px;
+            text-align: left;
+        }
+
+        .numero {
+            display: block;
+            color: #c90000;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        .titre-fiche {
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1.25;
+        }
+
+        .sous-titre {
+            display: block;
+            color: #777;
+            font-size: 12px;
+            margin-top: 4px;
+        }
+
+        .fleche {
+            font-size: 30px;
+            color: #c90000;
+            font-weight: 300;
+        }
+
+        /* RETOUR */
+
+        .retour {
+            display: block;
+
+            background: #222;
+            color: white;
+            text-decoration: none;
+
+            text-align: center;
+
+            padding: 14px;
+            margin-top: 28px;
+
+            border-radius: 10px;
+
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .retour:active {
+            transform: scale(0.98);
+        }
+
+        /* PIED DE PAGE */
+
+        footer {
+            text-align: center;
+            color: #777;
+            font-size: 12px;
+            padding: 15px 10px 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="icone-header">🩺</div>
+
+    <h1>RECOMMANDATIONS DU MÉDECIN-CHEF</h1>
+
+    <p>MÉMO OPÉRATIONNEL — CHEF D’AGRÈS</p>
+
+</header>
+
+
+<main class="conteneur">
+
+
+    <!-- INFORMATION -->
+
+    <div class="information">
+
+        <strong>⚠️ À retenir</strong><br><br>
+
+        Ce mémo synthétise les recommandations de la
+        note opérationnelle départementale N°P/2016/02
+        — Version 2 du 26/01/2022.
+
+        <br><br>
+
+        Il constitue un outil de rappel opérationnel et
+        ne remplace pas les procédures, formations ou
+        directives médicales en vigueur.
+
+    </div>
+
+
+    <!-- RÉFLEXES -->
+
+    <div class="titre-section">
+        🚨 Réflexes opérationnels
+    </div>
+
+
+    <a class="fiche" href="malaise-avc.html">
+
+        <div class="icone-fiche">
+            🧠
+        </div>
+
+        <div class="texte-fiche">
+
+            <span class="numero">
+                01
+            </span>
+
+            <span class="titre-fiche">
+                MALAISE / AVC
+            </span>
+
+            <span class="sous-titre">
+                Glycémie • FAST
+            </span>
+
+        </div>
+
+        <div class="fleche">
+            ›
+        </div>
+
+    </a>
+
+
+    <a class="fiche" href="thorax-ecg.html">
+
+        <div class="icone-fiche">
+            ❤️
+        </div>
+
+        <div class="texte-fiche">
+
+            <span class="numero">
+                02
+            </span>
+
+            <span class="titre-fiche">
+                THORAX / ECG
+            </span>
+
+            <span class="sous-titre">
+                Ceinture ECG • SCA
+            </span>
+
+        </div>
+
+        <div class="fleche">
+            ›
+        </div>
+
+    </a>
+
+
+    <a class="fiche" href="co-fumees.html">
+
+        <div class="icone-fiche">
+            🫁
+        </div>
+
+        <div class="texte-fiche">
+
+            <span class="numero">
+                03
+            </span>
+
+            <span class="titre-fiche">
+                CO / FUMÉES
+            </span>
+
+            <span class="sous-titre">
+                O₂ • Soutien sanitaire
+            </span>
+
+        </div>
+
+        <div class="fleche">
+            ›
+        </div>
+
+    </a>
+
+
+    <a class="fiche" href="traumatisme.html">
+
+        <div class="icone-fiche">
+            🦴
+        </div>
+
+        <div class="texte-fiche">
+
+            <span class="numero">
+                04
+            </span>
+
+            <span class="titre-fiche">
+                TRAUMATISME
+            </span>
+
+            <span class="sous-titre">
+                Bassin • Rachis
+            </span>
+
+        </div>
+
+        <div class="fleche">
+            ›
+        </div>
+
+    </a>
+
+
+    <a class="fiche" href="brulures-plaies.html">
+
+        <div class="icone-fiche">
+            🔥
+        </div>
+
+        <div class="texte-fiche">
+
+            <span class="numero">
+                05
+            </span>
+
+            <span class="titre-fiche">
+                BRÛLURES / PLAIES
+            </span>
+
+            <span class="sous-titre">
+                Brûlures • Plaie thoracique
+            </span>
+
+        </div>
+
+        <div class="fleche">
+            ›
+        </div>
+
+    </a>
+
+
+    <a class="fiche" href="medicaments-perfusion.html">
+
+        <div class="icone-fiche">
+            💊
+        </div>
+
+        <div class="texte-fiche">
+
+            <span class="numero">
+                06
+            </span>
+
+            <span class="titre-fiche">
+                MÉDICAMENTS / PERFUSION
+            </span>
+
+            <span class="sous-titre">
+                Aide à la prise • Transport perfusé
+            </span>
+
+        </div>
+
+        <div class="fleche">
+            ›
+        </div>
+
+    </a>
+
+
+    <a class="fiche" href="nombreuses-victimes.html">
+
+        <div class="icone-fiche">
+            👥
+        </div>
+
+        <div class="texte-fiche">
+
+            <span class="numero">
+                07
+            </span>
+
+            <span class="titre-fiche">
+                NOMBREUSES VICTIMES
+            </span>
+
+            <span class="sous-titre">
+                Méthode START
+            </span>
+
+        </div>
+
+        <div class="fleche">
+            ›
+        </div>
+
+    </a>
+
+
+    <a class="fiche" href="arret-cardiaque.html">
+
+        <div class="icone-fiche">
+            ❤️‍🩹
+        </div>
+
+        <div class="texte-fiche">
+
+            <span class="numero">
+                08
+            </span>
+
+            <span class="titre-fiche">
+                ARRÊT CARDIAQUE
+            </span>
+
+            <span class="sous-titre">
+                MCE • DSA • BAVU / O₂
+            </span>
+
+        </div>
+
+        <div class="fleche">
+            ›
+        </div>
+
+    </a>
+
+
+    <!-- RETOUR -->
+
+    <a class="retour" href="../index.html">
+        ← RETOUR AUX THÈMES
+    </a>
+
+</main>
+
+
+<footer>
+    QPACRE — Secourisme<br>
+    Mémo opérationnel — Recommandations du Médecin-Chef
+</footer>
+
+</body>
+</html>
